@@ -1,0 +1,92 @@
+@import url('https://fonts.googleapis.com/css2?family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+:root {
+    --bg-color: radial-gradient(621px at 25.3% 13.8%, rgb(255, 255, 255) 0%, rgb(234, 236, 255) 90%);
+    --toggle-color: #302e4d;
+}
+
+body.dark {
+    --bg-color: #151515;
+    --toggle-color: #d7d6e3;
+}
+
+body {
+    background: var(--bg-color);
+    font-family: Kanit;
+    font-weight: 800;
+}
+
+.body-item {
+    border: 2px solid var(--toggle-color);
+    padding-top: 20px;
+    padding-bottom: 10px;
+    margin: 0.5% 35%;
+    border-radius: 20px;
+    box-shadow: 15px #151515;
+}
+
+.head {
+    text-align: center;
+    margin-top: 30px;
+    font-size: 50px;
+    color: var(--skin-color);
+
+}
+
+.padd-margin {
+    padding: 10px 5px;
+    margin: 10px 8px;
+}
+
+.input-display {
+    background: var(--bg-color);
+    width: 60%;
+    height: 30px;
+    text-align: center;
+    margin: 0 auto;
+    color: var(--toggle-color);
+    border: 1px solid var(--skin-color);
+}
+
+.mid {
+    text-align: center;
+
+}
+
+.mid .btn {
+    width: 70px;
+    height: 70px;
+}
+
+.typing {
+    text-align: center;
+    margin-top: 30px;
+    font-size: 50px;
+    color: var(--skin-color);
+}
+
+@media (max-width: 1000px) {
+    .body-item {
+        border: 2px solid var(--toggle-color);
+        padding-top: 20px;
+        padding-bottom: 10px;
+        margin: 0.5% 10%;
+        border-radius: 20px;
+        box-shadow: 0 0 30px #151515;
+    }
+
+    .input-display {
+        width: 70%;
+        text-align: center;
+        margin: 0 auto;
+    }
+
+    .mid .btn {
+        cursor: pointer;
+        transition: all 0.3s ease;
+    }
+
+    .mid .btn:hover {
+        transform: scale(1.15);
+    }
+}
