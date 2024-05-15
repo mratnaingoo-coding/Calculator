@@ -3,3 +3,4 @@
 - Design some kind of tools with bootstrap.
 - Font & border color changing with CSS & Javascript.
 - Calculating method with Js.
+- Assigment from Code Mal Academy.
